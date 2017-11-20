@@ -3,6 +3,7 @@
 #include <string>
 #include <cctype>
 #include <windows.h>
+#include <conio.h>
 
 int main()
 {
@@ -37,6 +38,6 @@ int main()
 	SetConsoleOutputCP(65001);
 	//test();
 
-	system("pause");
+	_getch();
 	return 0;
 }

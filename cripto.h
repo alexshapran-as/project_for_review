@@ -10,8 +10,8 @@ void get_stable_value(int& value);
 void get_real_value(long long& value, unsigned int index);
 const unsigned int p = 3; //1867;
 const unsigned int q = 11;   //1877;
-static unsigned int n = {0};
-static unsigned int e = {0};
-static unsigned int f = {0};
-static unsigned int d = {0};
+static unsigned int n = 0;
+static unsigned int e = 0;
+static unsigned int f = 0;
+static unsigned int d = 0;
 #endif

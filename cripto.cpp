@@ -8,24 +8,24 @@
 
 std::vector<unsigned int> delta;
 std::vector<unsigned int> rus_flag;
-unsigned int count = {0};
+unsigned int count;
 
 void get_open_key(unsigned int& e, unsigned int& n)
 {
 	n = p * q; // Модуль N
 	f = (p - 1)*(q - 1); // Функция Эйлера
-	if (f > 65537) e = {65537}; // Открытая экспонента
-	else if (f > 257) e = {257};
-	else if (f > 17) e = {7}; // 17
-	else if (f > 5) e = {5};
-	else e = {3};
+	if (f > 65537) e = 65537; // Открытая экспонента
+	else if (f > 257) e = 257;
+	else if (f > 17) e = 7; // 17
+	else if (f > 5) e = 5;
+	else e = 3;
 }
 
 void get_private_key(unsigned int& d)
 {
-	double temp = {0.0};
-	unsigned int k = {0};
-	double eps = {0.00001};
+	double temp = 0.0;
+	unsigned int k = 0;
+	double eps = 0.00001;
 	do
 	{
 		k++;
@@ -59,9 +59,9 @@ void encryption(std::string& message)
 		}
 	}
 	std::cout << std::endl << "После шифрования: ";
-	for (unsigned int i = {0}; i < message.size(); ++i)
+	for (int i = 0; i < message.size(); i++)
 	{
-		int basis = {0};
+		int basis = 0;
 
 		if (int(message[i]) > 0) // Английская буква
 			basis = int(message[i]); // Берем код буквы
@@ -93,7 +93,7 @@ void decoding(std::string& message)
 	}
 
 	std::cout << std::endl << "После расшифрования: ";
-	for (unsigned int i = {0}; i < message.size(); ++i)
+	for (int i = 0; i < message.size(); i++)
 	{
 		int basis = int(message[i]); // Получаем код зашифрованной буквы
 
