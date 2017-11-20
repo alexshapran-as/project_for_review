@@ -14,4 +14,5 @@ static unsigned int n = {0};
 static unsigned int e = {0};
 static unsigned int f = {0};
 static unsigned int d = {0};
+const unsigned int deltaForChar = {21};
 #endif

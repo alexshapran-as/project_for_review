@@ -120,69 +120,69 @@ void decoding(std::string& message)
 
 void get_stable_value(int& value)
 {
-	if (value < 2*21 + 1)
+	if (value < 2*deltaForChar + 1)
 	{
-		value -= 21;
+		value -= deltaForChar;
 		delta.push_back(1);
 	}
-	else if (value > 2*21 + 1 && value < 3*21 + 1)
+	else if (value > 2*deltaForChar + 1 && value < 3*deltaForChar + 1)
 	{
-		value -= 2*21;
+		value -= 2*deltaForChar;
 		delta.push_back(2);
 	}
-	else if (value > 3*21 + 1 && value < 4*21 + 1)
+	else if (value > 3*deltaForChar + 1 && value < 4*deltaForChar + 1)
 	{
-		value -= 3*21;
+		value -= 3*deltaForChar;
 		delta.push_back(3);
 	}
-	else if (value > 4*21 + 1 && value < 5*21 + 1)
+	else if (value > 4*deltaForChar + 1 && value < 5*deltaForChar + 1)
 	{
-		value -= 4*21;
+		value -= 4*deltaForChar;
 		delta.push_back(4);
 	}
-	else if (value > 5*21 + 1 && value < 6*21 + 1)
+	else if (value > 5*deltaForChar + 1 && value < 6*deltaForChar + 1)
 	{
-		value -= 5*21;
+		value -= 5*deltaForChar;
 		delta.push_back(5);
 	}
-	else if (value > 6*21 + 1 && value < 7*21 + 1)
+	else if (value > 6*deltaForChar + 1 && value < 7*deltaForChar + 1)
 	{
-		value -= 6*21;
+		value -= 6*deltaForChar;
 		delta.push_back(6);
 	}
-	else if (value > 7*21 + 1 && value < 8*21 + 1)
+	else if (value > 7*deltaForChar + 1 && value < 8*deltaForChar + 1)
 	{
-		value -= 7*21;
+		value -= 7*deltaForChar;
 		delta.push_back(7);
 	}
-	else if (value > 8*21 + 1 && value < 9*21 + 1)
+	else if (value > 8*deltaForChar + 1 && value < 9*deltaForChar + 1)
 	{
-		value -= 8*21;
+		value -= 8*deltaForChar;
 		delta.push_back(8);
 	}
-	else if (value > 9*21 + 1 && value < 10*21 + 1)
+	else if (value > 9*deltaForChar + 1 && value < 10*deltaForChar + 1)
 	{
-		value -= 9*21;
+		value -= 9*deltaForChar;
 		delta.push_back(9);
 	}
-	else if (value > 10*21 + 1 && value < 11*21 + 1)
+	else if (value > 10*deltaForChar + 1 && value < 11*deltaForChar + 1)
 	{
-		value -= 10*21;
+		value -= 10*deltaForChar;
 		delta.push_back(10);
 	}
-	else if (value > 11*21 + 1 && value < 12*21 + 1)
+	else if (value > 11*deltaForChar + 1 && value < 12*deltaForChar + 1)
 	{
-		value -= 11*21;
+		value -= 11*deltaForChar;
 		delta.push_back(11);
 	}
-	else if (value > 12*21 + 1 && value < 13*21 + 1)
+	else if (value > 12*deltaForChar + 1 && value < 13*deltaForChar + 1)
 	{
-		value -= 12*21;
+		value -= 12*deltaForChar;
 		delta.push_back(12);
 	}
-	else if (value > 13*21 + 1 && value < 14*21 + 1)
+	else if (value > 13*deltaForChar + 1 && value < 14*deltaForChar + 1)
 	{
-		value -= 13*21;
+		value -= 13*deltaForChar;
 		delta.push_back(13);
 	}
 }
@@ -191,55 +191,55 @@ void get_real_value(long long& value, unsigned int index) // index - номер 
 {
 	if (delta[index] == 1)
 	{
-		value += 21;
+		value += deltaForChar;
 	}
 	else if (delta[index] == 2)
 	{
-		value += 2*21;
+		value += 2*deltaForChar;
 	}
 	else if (delta[index] == 3)
 	{
-		value += 3*21;
+		value += 3*deltaForChar;
 	}
 	else if (delta[index] == 4)
 	{
-		value += 4*21;
+		value += 4*deltaForChar;
 	}
 	else if (delta[index] == 5)
 	{
-		value += 5*21;
+		value += 5*deltaForChar;
 	}
 	else if (delta[index] == 6)
 	{
-		value += 6*21;
+		value += 6*deltaForChar;
 	}
 	else if (delta[index] == 7)
 	{
-		value += 7*21;
+		value += 7*deltaForChar;
 	}
 	else if (delta[index] == 8)
 	{
-		value += 8*21;
+		value += 8*deltaForChar;
 	}
 	else if (delta[index] == 9)
 	{
-		value += 9*21;
+		value += 9*deltaForChar;
 	}
 	else if (delta[index] == 10)
 	{
-		value += 10*21;
+		value += 10*deltaForChar;
 	}
 	else if (delta[index] == 11)
 	{
-		value += 11*21;
+		value += 11*deltaForChar;
 	}
 	else if (delta[index] == 12)
 	{
-		value += 12*21;
+		value += 12*deltaForChar;
 	}
 	else if (delta[index] == 13)
 	{
-		value += 13*21;
+		value += 13*deltaForChar;
 	}
 }
 
